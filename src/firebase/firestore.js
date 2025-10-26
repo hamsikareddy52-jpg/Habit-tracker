@@ -52,6 +52,7 @@ export const saveHabitsData = async (userId, habits) => {
 
 // Get habits data
 export const getHabitsData = async (userId) => {
+  console.log('getHabitsData called for user:', userId); // <-- small change
   try {
     const habitsRef = doc(db, 'users', userId, 'data', 'habits');
     const habitsSnap = await getDoc(habitsRef);
@@ -67,6 +68,7 @@ export const getHabitsData = async (userId) => {
     return [];
   }
 };
+
 
 // Save diary data
 export const saveDiaryData = async (userId, diary) => {

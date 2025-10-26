@@ -1,6 +1,6 @@
 {
 	"name": "habit-tracker",
-	"description": "Habit tracker that tracks your progress, and keep a journal for each habit.",
+"description": "Habit tracker that tracks your progress, and keeps a journal for each habit.",
 	"version": "0.20.2",
 	"homepage": "",
 	"private": true,
@@ -29,13 +29,15 @@
 		"workbox-strategies": "^6.6.0",
 		"workbox-streams": "^6.6.0",
 		"zustand": "^5.0.1"
-	},
 	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -b gh-pages -d build",
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test-change": "echo 'test git change'"  // <-- small new script
+},
+
 	},
 	"eslintConfig": {
 		"extends": [

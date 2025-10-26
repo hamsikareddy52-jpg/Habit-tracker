@@ -24,3 +24,15 @@ root.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register();
+import React from 'react';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Welcome to My React App!</h1>
+      <p>This is a small feature added for Git testing.</p>
+    </div>
+  );
+}
+
+export default App;

@@ -4,9 +4,19 @@
 	padding-top: var(--header-height);
 }
 
+.App:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
 .text-button {
 	background-color: transparent;
 	color: dodgerblue;
 	font-size: inherit;
 	font-family: inherit;
+}
+
+.text-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
